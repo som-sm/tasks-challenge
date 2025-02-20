@@ -17,7 +17,7 @@ import { MobileColumnAction } from "./components/MobileColumnAction";
 export default function App() {
   const [tasks, setTasks] = useLocalStorage("gfe/tasks", mockTasks);
   const [columns, setColumns] = useLocalStorage("gfe/columns", mockColumns);
-  const [filters, setFilters] = useLocalStorage<Partial<Task>>("gfe/filters", {});
+  const [filters, setFilters] = React.useState<Partial<Task>>({});
   const [pageInfo, setPageInfo] = React.useState({ currentPage: 1, pageSize: 10 });
   const [searchTerm, setSearchTerm] = React.useState("");
 
@@ -136,7 +136,7 @@ export default function App() {
           />
         </div>
       </div>
-      <div className="flex items-center justify-end gap-4 pb-6">
+      <div className="flex flex-wrap items-center justify-end gap-4 pb-6">
         <div className="md:hidden">
           <MobileColumnAction
             columns={columns}

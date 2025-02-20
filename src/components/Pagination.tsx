@@ -17,7 +17,7 @@ type PaginationProps = {
 
 export function Pagination({ pageInfo, totalPages, onPageInfoChange }: PaginationProps) {
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex flex-wrap items-center justify-between gap-2">
       <div>
         <Select
           value={pageInfo.pageSize.toString()}
@@ -34,7 +34,7 @@ export function Pagination({ pageInfo, totalPages, onPageInfoChange }: Paginatio
           </SelectContent>
         </Select>
       </div>
-      <div className="flex items-center gap-2">
+      <div className="ml-auto flex items-center gap-2">
         <Button
           variant="outline"
           size="icon"

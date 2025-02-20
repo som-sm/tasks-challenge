@@ -59,7 +59,7 @@ export function MobileColumnAction({
         <DropdownMenuTrigger asChild>
           <Button variant="secondary">Modify Columns</Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="w-56" align="start">
+        <DropdownMenuContent className="w-56">
           <DropdownMenuGroup>
             {columns.map(({ id, label, sort, required }) => (
               <DropdownMenuSub key={id}>
