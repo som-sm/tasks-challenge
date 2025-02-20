@@ -1,8 +1,11 @@
 # Tasks CRUD Challenge
 
-Built using React, TypeScript, Tailwind, Shadcn.
-
 Link: https://tasks-challenge-seven.vercel.app/
+
+## Overview
+
+- Built with React, TypeScript, Tailwind, and ShadCN.
+- All core functionalities are implemented, with thorough handling of edge cases.
 
 ## Functionalities
 
