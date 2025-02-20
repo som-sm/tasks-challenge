@@ -57,7 +57,7 @@ export function TasksTable({
                 return (
                   <React.Fragment key={col.id}>
                     <div className="text-zinc-600 [overflow-wrap:anywhere]">{col.label}</div>
-                    <div>
+                    <div className={cn(col.type === "enum" && "capitalize")}>
                       {col.type === "enum" ? (
                         <Pill>
                           {(task[col.id] as ValueTypeForColumn[typeof col.type]).replace(/_/g, " ")}
@@ -147,7 +147,7 @@ export function TasksTable({
                     className={"border border-input px-4 py-5 text-sm [overflow-wrap:anywhere]"}
                   >
                     {col.type === "enum" ? (
-                      <div className="flex justify-center">
+                      <div className="flex justify-center capitalize">
                         <Pill>
                           {(task[col.id] as ValueTypeForColumn[typeof col.type]).replace(/_/g, " ")}
                         </Pill>

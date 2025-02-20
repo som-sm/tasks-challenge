@@ -17,7 +17,7 @@ export function Pill({ variant = "normal", children, slot }: PillProps) {
       )}
     >
       <div className="flex items-center gap-2">
-        <span className="max-w-64 overflow-hidden overflow-ellipsis whitespace-nowrap capitalize">
+        <span className="max-w-40 overflow-hidden overflow-ellipsis whitespace-nowrap md:max-w-64">
           {children}
         </span>
         {slot}

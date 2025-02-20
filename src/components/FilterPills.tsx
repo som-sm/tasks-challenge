@@ -1,4 +1,5 @@
-import { Column, Task } from "@/lib/definitions";
+import { Column, Task, ValueTypeForColumn } from "@/lib/definitions";
+import { cn } from "@/lib/utils";
 import { Pill } from "./Pill";
 import { Button } from "./ui/button";
 import { X } from "lucide-react";
@@ -38,8 +39,14 @@ export function FilterPills({ columns, filters, onFilterDelete }: FilterPillsPro
               }
             >
               {column.label}:{" "}
-              <span className="font-semibold">
-                {column.type === "checkbox" ? (filterValue ? "Yes" : "No") : filterValue}
+              <span className={cn("font-semibold", column.type === "enum" && "capitalize")}>
+                {column.type === "enum"
+                  ? (filterValue as ValueTypeForColumn[typeof column.type]).replace(/_/g, " ")
+                  : column.type === "checkbox"
+                    ? filterValue
+                      ? "Yes"
+                      : "No"
+                    : filterValue}
               </span>
             </Pill>
           );
