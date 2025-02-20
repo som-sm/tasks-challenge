@@ -3,7 +3,7 @@ import { Column, Task, ValueTypeForColumn } from "../lib/definitions";
 import { Highlight } from "./Highlight";
 import { Pill } from "./Pill";
 import { TaskActionMenu } from "./TaskActionMenu";
-import { ArrowDownNarrowWide, ArrowUpNarrowWide, Check, X } from "lucide-react";
+import { ArrowDownNarrowWide, ArrowUpNarrowWide } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ColumnActionMenu } from "./ColumnActionMenu";
 import { Button } from "./ui/button";
