@@ -1,9 +1,7 @@
 import * as React from "react";
 import {
-  DialogClose,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
@@ -25,7 +23,6 @@ import {
   DrawerTitle,
 } from "@/components/ui/drawer";
 import { useMediaQuery } from "usehooks-ts";
-import { X } from "lucide-react";
 
 type TaskFormDialogContentProps = {
   task?: Task;
