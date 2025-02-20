@@ -681,13 +681,6 @@ export const mockTasks: Task[] = [
   },
 ];
 
-// export const mockTasks: Task[] = rawMockTasks.map((task) => ({
-//   ...task,
-//   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-//   count: Math.floor(Math.random() * 100),
-//   isFlagged: Math.random() > 0.5,
-// }));
-
 export const mockColumns: Column[] = [
   {
     id: "title",
@@ -710,25 +703,3 @@ export const mockColumns: Column[] = [
     required: true,
   },
 ];
-
-// export const mockColumns: Column[] = [
-//   ...rawMockColumns,
-//   {
-//     id: "description",
-//     label: "Description",
-//     type: "text",
-//     required: false,
-//   },
-//   {
-//     id: "count",
-//     label: "Count",
-//     type: "number",
-//     required: false,
-//   },
-//   {
-//     id: "isFlagged",
-//     label: "Flagged",
-//     type: "checkbox",
-//     required: false,
-//   },
-// ];
