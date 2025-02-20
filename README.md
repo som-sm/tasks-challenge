@@ -2,6 +2,8 @@
 
 Built using React, TypeScript, Tailwind, Shadcn.
 
+Link: https://tasks-challenge-seven.vercel.app/
+
 ## Functionalities
 
 ### Create new tasks
